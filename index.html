@@ -1,58 +1,61 @@
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <title>Meu Primeiro Jogo S2 </title>
-        <style>
-        td {
-            
-            font-size: 80px;
-            background:rgb(219, 219, 231);    
-            width: 90px;
-            height: 90px;
-            text-align: center;
-            cursor: pointer;
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <title>Meu Primeiro Jogo S2 </title>
+            <style>
+            body{
+                text-align: center;
+                font-size: 30px;
             }
-            td:hover {
-                background-color: aqua;
-            }
-        </style>
-        
-    </head>
-    <body>
-        <h1>Jogo da Velha</h1>
-        <p>Felicidades S2</p>
-        <table>
-            <tr>
-                <td onclick="marcar(this)" ></td>
-                <td onclick="marcar(this)" ></td>
-                <td onclick="marcar(this)" ></td>
-            </tr>
-            <tr>
-                <td onclick="marcar(this)" ></td>
-                <td onclick="marcar(this)" ></td>
-                <td onclick="marcar(this)" ></td>
-            </tr>
-            <tr>
-                <td onclick="marcar(this)" ></td>
-                <td onclick="marcar(this)" ></td>
-                <td onclick="marcar(this)" ></td>
-            </tr>
-        </table>
-        <script>
-
-            var jogador = "X"
-
-            function marcar(td) {
-
-                td.innerHTML = jogador
-                if(jogador == "X"){
-                    jogador = "O"
-                }else {
-                    jogador = "X"
+            td {
+                font-size: 80px;
+                background:rgb(56, 56, 114);    
+                width: 90px;
+                height: 90px;
+                text-align: center;
+                cursor: pointer;
                 }
-                
+                td:hover {
+                    background-color:  rgb(159, 59, 59);
+                }
+            </style>
+            
+        </head>
+        <body>
+            <h1>Jogo da Velha</h1>
+            <p>Felicidades S2</p>
+            <table>
+                <tr>
+                    <td onclick="marcar(this)" ></td>
+                    <td onclick="marcar(this)" ></td>
+                    <td onclick="marcar(this)" ></td>
+                </tr>
+                <tr>
+                    <td onclick="marcar(this)" ></td>
+                    <td onclick="marcar(this)" ></td>
+                    <td onclick="marcar(this)" ></td>
+                </tr>
+                <tr>
+                    <td onclick="marcar(this)" ></td>
+                    <td onclick="marcar(this)" ></td>
+                    <td onclick="marcar(this)" ></td>
+                </tr>
+            </table>
+            <script>
 
-            }
-        </script>
-    </body>
-    </html>
+                var jogador = "X"
+
+                function marcar(td) {
+
+                    td.innerHTML = jogador
+                    if(jogador == "X"){
+                        jogador = "O"
+                    }else {
+                        jogador = "X"
+                    }
+                    
+
+                }
+            </script>
+        </body>
+        </html>
